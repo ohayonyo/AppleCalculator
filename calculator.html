@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Calculator project</title>
+    <link rel="stylesheet" href="calculator.css">
+    <!-- <style>
+
+    </style> -->
+  </head>
+
+  <body>
+    <div class="calculator">
+
+      <div style="text-align: right; margin-right: 45px; margin-top: 60px;">
+        <p class="calculator-value js-value" style="font-weight: 400; font-size: 60px;">125</p>
+      </div>
+  
+      <div style="margin-left: 10px; margin-top: -30px; ">
+        <button class="button-shape op-button js-reset-button" 
+        onclick="
+          resetFunction();
+          ">AC</button>
+        <button class="button-shape op-button" onclick="handleNegateRes();">+/-</button>
+        <button class="button-shape op-button" onclick="handlePrecentage();">%</button>
+        <button class="button-shape math-button js-divide-button" onclick="handleMathOperation('/');">/</button>
+      </div>
+
+      <div style="margin-left: 10px; margin-top: 12px;">
+        <button class="button-shape number-button" onclick="handleNumber('7');">7</button>
+        <button class="button-shape number-button" onclick="handleNumber('8');">8</button>
+        <button class="button-shape number-button" onclick="handleNumber('9');">9</button>
+        <button class="button-shape math-button js-mul-button" onclick="handleMathOperation('*');">x</button>
+      </div>
+
+      <div style="margin-left: 10px; margin-top: 12px;">
+        <button class="button-shape number-button" onclick="handleNumber('4');">4</button>
+        <button class="button-shape number-button" onclick="handleNumber('5');">5</button>
+        <button class="button-shape number-button" onclick="handleNumber('6');">6</button>
+        <button class="button-shape math-button js-minus-button" onclick="handleMathOperation('-');">-</button>
+      </div>
+
+      <div style="margin-left: 10px; margin-top: 12px;">
+        <button class="button-shape number-button" onclick="handleNumber('1');">1</button>
+        <button class="button-shape number-button" onclick="handleNumber('2');">2</button>
+        <button class="button-shape number-button" onclick="handleNumber('3');">3</button>
+        <button class="button-shape math-button js-plus-button" onclick="handleMathOperation('+');">+</button>
+      </div>
+
+      <div style="margin-left: 10px; margin-top: 12px; margin-bottom: 20px;">
+        <button class="zero-button-shape number-button" onclick="handleNumber('0');" style="text-align: left; padding-left: 25px;">0</button>
+        <button class="button-shape number-button" onclick="handleDot()">.</button>
+        <button class="button-shape math-button" onclick="calculateRes();">=</button>
+      </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+    
+    
+  </body>
+
+</html>
